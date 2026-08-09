@@ -10,6 +10,10 @@ class AdminRejectStates(StatesGroup):
     waiting_reason = State()
 
 
+class PromoStates(StatesGroup):
+    choosing_package = State()
+
+
 class AdminStates(StatesGroup):
     waiting_card = State()
     waiting_ref_bonus = State()

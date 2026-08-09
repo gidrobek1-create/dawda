@@ -28,6 +28,7 @@ TEXTS = {
     "btn_topup": {"uz": "💳 Balans to'ldirish", "ru": "💳 Пополнить баланс"},
     "btn_promo": {"uz": "🎁 Promokod sotib olish", "ru": "🎁 Купить промокод"},
     "btn_referral": {"uz": "🔗 Referal", "ru": "🔗 Реферал"},
+    "btn_back_menu": {"uz": "⬅️ Bosh menyu", "ru": "⬅️ Главное меню"},
     "coming_soon": {
         "uz": "🔧 Bu bo'lim tez orada ishga tushadi.",
         "ru": "🔧 Этот раздел скоро заработает.",
@@ -128,8 +129,8 @@ TEXTS = {
 
     # ---- Promo ----
     "promo_choose_package": {
-        "uz": "🎁 Kerakli paketni tanlang:",
-        "ru": "🎁 Выберите нужный пакет:",
+        "uz": "🎟 Promokodlar narxlari:\nSotib olmoqchi bo'lgan promokodingizni tanlang:",
+        "ru": "🎟 Цены на промокоды:\nВыберите промокод, который хотите купить:",
     },
     "promo_no_packages": {
         "uz": "😔 Hozircha sotuvda promo paketlar yo'q. Birozdan so'ng qayta urinib ko'ring.",

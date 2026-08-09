@@ -1,0 +1,28 @@
+databases:
+  - name: tgbot-db
+    plan: free
+    databaseName: tgbot
+    user: tgbot
+
+services:
+  - type: web
+    name: tgbot
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_MODE
+        value: "true"
+      - key: WEBHOOK_BASE_URL
+        sync: false        # masalan: https://tgbot-xxxx.onrender.com  (deploy bo'lgach to'ldiring)
+      - key: WEBHOOK_SECRET
+        generateValue: true
+      - key: SUPER_ADMIN_IDS
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: tgbot-db
+          property: connectionString
